@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@font-face {
+    font-family: LemonMilk;
+    src: url(/assets/font/LEMONMILK-Bold.otf);
+}
+
+html,
+body{
+    height: 100%;
+    /* overflow: hidden; */
+}
+.logo{
+    font-family: 'LemonMilk';
+    font-size: 50px;
+    margin-left: 1rem;
+    color: white !important;
+}
+
+.offcanvas{
+    transition-duration: 1s;
+    background-color: rgb(19, 27, 35, .95);
+}
+.offcanvas-bottom{
+    height: 100%;
+    border-top: none;
+}
+.list-group-item{
+    border: none;
+    background-color: rgb(19, 27, 35, .1);
+}
+.navbar-toggler{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white !important;
+}
+
+.customlink{
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+.customlink:hover{
+    color: #FFC107;
+}
+.logo-accueil{
+    font-family: 'LemonMilk';
+    font-size: 350px;
+    /* color: #FFC107; */
+    color: #FFFFFF;
+    text-shadow: -30px 20px 8px rgb(0, 0, 0);
+    z-index: 1025;
+}
+.name{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFC107;
+    /* text-shadow: -6px 3px 2px #000000; */
+    z-index: 1001;
+    position: relative;
+    bottom: 50px;
+}
+.dev{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    z-index: 1001;
+    position: relative;
+    bottom: 50px;
+}
+.mail{
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    color: white;
+    z-index: 1001;
+    position: absolute;
+    top: 50%;
+    left: -2.2%;
+    transform: rotate(-90deg);
+}
+.space{
+    height: 101px;
+}
+.content{
+    height: calc(100% - 101px);
+}
+#bg-custom{
+    /* background-color: #4F6367; */
+    background-color: #131B23;
+}
+.bgbody{
+    background-color: #131B23;
+}
+.custompo{
+    position: absolute;
+    top: 75%
+}
+.me{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.customsize{
+    font-size: 50px;
+    color: white;
+}
+.customtext{
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    color: white;
+}
+.do{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    color: white;
+}
+.who{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFC107;
+}
+.bg-card{
+    background-color: #0d1218;
+    border-radius: 30px;
+    box-shadow: -10px 5px 9px 0px #000000;
+}
+#accueil{
+    display: block;
+}
+#parcours{
+    display: none;
+}
+#compétences{
+    display: none;
+}
+#apropos{
+    display: none;
+}
+.bar{
+    border: solid 2px white;
+    height: 20px;
+    box-shadow: inset -5px 5px 10px -5px #000000;
+    background-color: #D6D6D6;
+}
+.progress{
+    background-color: #FFC107;
+    border-radius: 0px;
+}
+.hop{
+    background-color: #131B23;
+    z-index: 999;
+}
+
+
+
+
+/* ------------------------------------- LINE PARCOURS ----------------------------------------- */
+
+.timeline{
+    width: 3px;
+    background: white;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+}
+.time{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFC107;
+    text-align: end;
+}
+.time-content{
+    font-family: 'Josefin Sans';
+    font-size: 12px;
+    color: white;
+}
+.icon{
+    content: '';
+    background-color: #FFC107;
+    border: solid 2px transparent;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    left: calc(50% - 6px);
+    bottom: -20px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+/* ------------------------------------- LINE ACCUEIL ------------------------------------------ */
+
+.lines{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+.line{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #0d1218;
+    overflow: hidden;
+}
+.line::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFC107 75%, #FFC107 100%); */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFFFFF 75%, #FFFFFF 100%);
+
+    -webkit-animation: drop 7s 0s infinite;
+    animation: drop 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.line:nth-child(1) {
+    left: 25%
+}
+.line:nth-child(1)::after {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.line:nth-child(3) {
+    right: 25%
+}
+.line:nth-child(3)::after {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+  
+@-webkit-keyframes drop{
+    0%{ top: -50%; }
+    100%{ top: 110%; }
+}
+@keyframes drop{
+    0%{ top: -50%; }
+    100%{ top: 110%; }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+/* --------------------------------------- MEDIA QUERIES --------------------------------------- */
+
+@media (min-width: 992px){
+
+    .custompo{
+        position: absolute;
+        top: 80%
+    }
+}
+
+@media (max-height: 820px) and (max-width: 992px){
+    .logo-accueil{
+        margin-top: 0 !important;
+    }
+    #accueil{
+        position: relative;
+        bottom: 50px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
