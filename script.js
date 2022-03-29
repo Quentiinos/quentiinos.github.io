@@ -2,20 +2,9 @@ let accueil = document.getElementById('accueil')
 let parcours = document.getElementById('parcours')
 let apropos = document.getElementById('apropos')
 let lines = document.getElementById('lines')
-
+let nav = document.getElementById('navbar')
 
 let arr = [accueil, parcours, apropos]
-
-// arr.forEach(element => {
-//     if(!element.classList.contains('act')){
-//         element.style.display = 'none'
-//     }else{
-//         element.style.display = 'block'
-//     }
-// });
-
-// let bg = document.getElementById('bg-custom')
-let nav = document.getElementById('navbar')
 
 function check(e){
     arr.forEach(element => {
@@ -35,15 +24,6 @@ function check(e){
         document.body.style.backgroundColor = '#131B23'
         nav.classList.replace('bgbody', 'bg-transparent')
     }
-
-    // if(e == 'accueil'){
-    //     lines.classList.replace('d-none', 'd-flex')
-    //     bg.style.backgroundColor = '#131B23'
-    // }else if(e == 'parcours'){
-    //     bg.style.backgroundColor = 'green'
-    // }else if( e == 'apropos'){
-    //     bg.style.backgroundColor = 'red'
-    // }
 };
 
 
